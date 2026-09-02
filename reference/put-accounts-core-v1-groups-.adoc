@@ -7,6 +7,7 @@ summary: Modificar un grupo
 ---
 = Modificar un grupo
 :allow-uri-read: 
+:imagesdir: ../media/
 
 
 [.api-doc-operation .api-doc-operation-put]#PUT# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/groups/{group_id}`#
@@ -15,6 +16,7 @@ Sustituye todo el recurso almacenado por el cuerpo de la solicitud JSON suminist
 
 
 
+[[parameters]]
 == Parámetros
 
 [cols="5*"]
@@ -36,6 +38,7 @@ ID de la colección de grupos a listar
 |===
 
 
+[[request-body]]
 == Cuerpo de la solicitud
 
 Sustituye todo el recurso almacenado por el cuerpo de la solicitud JSON suministrado, conservando los valores clave que no son modificables por el usuario.
@@ -119,6 +122,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -127,6 +131,7 @@ Status: 204, Indicates if the group resource was updated.
 ----
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -172,6 +177,7 @@ Status: 400, Bad request
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -217,6 +223,7 @@ Status: 403, Forbidden
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -262,6 +269,7 @@ Status: 500, Internal server error
 ====
 
 
+[[error]]
 == Error
 
 [source]
@@ -307,11 +315,13 @@ Status: 404, Not found
 ====
 
 
+[[definitions]]
 == Definiciones
 
 .Ver definiciones
 [%collapsible]
 ====
+[[type_astra_label]]
 [role="api-collapsible-fifth-title"]
 etiqueta_tipo_astra
 
@@ -327,6 +337,7 @@ etiqueta_tipo_astra
 | valor | cadena | Verdadero  a| 
 
 |===
+[[type_astra_metadata_update]]
 [role="api-collapsible-fifth-title"]
 type_astra_metadatos_update
 
@@ -359,6 +370,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 | modifiedBy | cadena | Falso  a| 
 
 |===
+[[invalidParams]]
 [role="api-collapsible-fifth-title"]
 invalidParams
 

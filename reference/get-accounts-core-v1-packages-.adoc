@@ -7,6 +7,7 @@ summary: Recuperar un paquete
 ---
 = Recuperar un paquete
 :allow-uri-read: 
+:imagesdir: ../media/
 
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/packages/{package_id}`#
@@ -15,6 +16,7 @@ Devuelve el recurso Package API almacenado en el cuerpo de respuesta JSON.
 
 
 
+[[parameters]]
 == Parámetros
 
 [cols="5*"]
@@ -36,6 +38,7 @@ ID de la colección de paquetes a listar
 |===
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -273,6 +276,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -318,6 +322,7 @@ Status: 401, Unauthorized
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -368,6 +373,7 @@ Lista de parámetros de consulta no válidos
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -413,6 +419,7 @@ Status: 403, Forbidden
 ====
 
 
+[[error]]
 == Error
 
 [source]
@@ -458,11 +465,13 @@ Status: 404, Not found
 ====
 
 
+[[definitions]]
 == Definiciones
 
 .Ver definiciones
 [%collapsible]
 ====
+[[type_astra_stateTransition]]
 [role="api-collapsible-fifth-title"]
 type_astra_stateTransition
 
@@ -478,6 +487,7 @@ type_astra_stateTransition
 | a | array[string] | Verdadero  a| 
 
 |===
+[[type_astra_stateDetail]]
 [role="api-collapsible-fifth-title"]
 type_astra_stateDetail
 
@@ -497,6 +507,7 @@ type_astra_stateDetail
 | detalle | cadena | Verdadero  a| 
 
 |===
+[[dependsOnImages]]
 [role="api-collapsible-fifth-title"]
 dependsOnImages
 
@@ -531,6 +542,7 @@ Cadena JSON que representa la etiqueta/versión de esta imagen. Los valores defi
 
 
 |===
+[[images]]
 [role="api-collapsible-fifth-title"]
 imágenes
 
@@ -578,6 +590,7 @@ Cadena JSON que representa el resumen de esta imagen. Los valores definidos son:
 Matriz JSON de objetos JSON que describen las imágenes necesarias para instalar o actualizar la imagen actual.
 
 |===
+[[dependsOnComponents]]
 [role="api-collapsible-fifth-title"]
 dependsOnComponents
 
@@ -601,6 +614,7 @@ Cadena JSON que describe el nombre del componente. Los valores definidos son:
 Matriz JSON de cadenas JSON que definen la versión del componente necesaria para instalar la imagen actual.
 
 |===
+[[artifacts]]
 [role="api-collapsible-fifth-title"]
 artefactos
 
@@ -650,6 +664,7 @@ Cadena JSON que contiene la versión de ese artefacto, si se proporciona. Los va
 Matriz JSON de objetos JSON que describen los componentes instalados necesarios para instalar/actualizar la imagen actual.
 
 |===
+[[files]]
 [role="api-collapsible-fifth-title"]
 archivos
 
@@ -692,6 +707,7 @@ Cadena JSON que contiene el contenido del archivo. Los valores definidos son:
 
 
 |===
+[[upgradableVersions]]
 [role="api-collapsible-fifth-title"]
 upgradableVersions
 
@@ -717,6 +733,7 @@ Cadena JSON que describe la versión máxima a la que se puede actualizar la ver
 
 
 |===
+[[dependencies]]
 [role="api-collapsible-fifth-title"]
 dependencias
 
@@ -751,6 +768,7 @@ Cadena JSON que describe la versión máxima requerida de ese componente. Los va
 
 
 |===
+[[type_astra_label]]
 [role="api-collapsible-fifth-title"]
 etiqueta_tipo_astra
 
@@ -766,6 +784,7 @@ etiqueta_tipo_astra
 | valor | cadena | Verdadero  a| 
 
 |===
+[[type_astra_metadata]]
 [role="api-collapsible-fifth-title"]
 tipo_astra_metadatos
 
@@ -798,6 +817,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 | modifiedBy | cadena | Falso  a| 
 
 |===
+[[invalidParams]]
 [role="api-collapsible-fifth-title"]
 invalidParams
 

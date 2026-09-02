@@ -7,6 +7,7 @@ summary: Listar todos los buckets
 ---
 = Listar todos los buckets
 :allow-uri-read: 
+:imagesdir: ../media/
 
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/topology/v1/buckets`#
@@ -15,6 +16,7 @@ Devuelve una matriz JSON de todos los recursos coincidentes de la colección. Si
 
 
 
+[[parameters]]
 == Parámetros
 
 [cols="5*"]
@@ -31,6 +33,7 @@ ID del recurso de cuenta que lo contiene
 |===
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -80,6 +83,7 @@ Status: 200, Returns a JSON array of all matching resources in the collection. I
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -125,6 +129,7 @@ Status: 401, Unauthorized
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -175,6 +180,7 @@ Lista de parámetros de consulta no válidos
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -220,6 +226,7 @@ Status: 403, Forbidden
 ====
 
 
+[[error]]
 == Error
 
 [source]
@@ -265,11 +272,13 @@ Status: 404, Not found
 ====
 
 
+[[definitions]]
 == Definiciones
 
 .Ver definiciones
 [%collapsible]
 ====
+[[type_astra_stateDetail]]
 [role="api-collapsible-fifth-title"]
 type_astra_stateDetail
 
@@ -289,6 +298,7 @@ type_astra_stateDetail
 | detalle | cadena | Verdadero  a| 
 
 |===
+[[s3]]
 [role="api-collapsible-fifth-title"]
 s3
 
@@ -316,6 +326,7 @@ Cadena JSON que contiene el nombre del bucket S3. Los valores definidos son:
 
 
 |===
+[[gcp]]
 [role="api-collapsible-fifth-title"]
 gcp
 
@@ -334,6 +345,7 @@ Cadena JSON que contiene el nombre del bucket de Google Cloud de respaldo. Los v
 
 
 |===
+[[azure]]
 [role="api-collapsible-fifth-title"]
 azure
 
@@ -361,6 +373,7 @@ Cadena JSON que contiene el nombre del blob Azure de respaldo. Los valores defin
 
 
 |===
+[[bucketParameters]]
 [role="api-collapsible-fifth-title"]
 bucketParameters
 
@@ -385,6 +398,7 @@ Objeto JSON que proporciona los parámetros del protocolo de Google Cloud.
 Objeto JSON que proporciona los parámetros del protocolo Azure.
 
 |===
+[[type_astra_label]]
 [role="api-collapsible-fifth-title"]
 etiqueta_tipo_astra
 
@@ -400,6 +414,7 @@ etiqueta_tipo_astra
 | valor | cadena | Verdadero  a| 
 
 |===
+[[type_astra_metadata_update]]
 [role="api-collapsible-fifth-title"]
 type_astra_metadatos_update
 
@@ -432,6 +447,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 | modifiedBy | cadena | Falso  a| 
 
 |===
+[[bucket_1_2_get_response_body]]
 [role="api-collapsible-fifth-title"]
 bucket_1.2_get_response_body
 
@@ -528,6 +544,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 
 
 |===
+[[type_astra_metadata_list]]
 [role="api-collapsible-fifth-title"]
 type_astra_metadata_list
 
@@ -563,6 +580,7 @@ type_astra_metadata_list
 | modifiedBy | cadena | Falso  a| 
 
 |===
+[[invalidParams]]
 [role="api-collapsible-fifth-title"]
 invalidParams
 

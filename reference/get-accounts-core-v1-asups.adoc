@@ -7,6 +7,7 @@ summary: Lista todos los recursos ASUP
 ---
 = Lista todos los recursos ASUP
 :allow-uri-read: 
+:imagesdir: ../media/
 
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/asups`#
@@ -15,6 +16,7 @@ Devuelve una matriz JSON de todos los recursos coincidentes de la colección. Si
 
 
 
+[[parameters]]
 == Parámetros
 
 [cols="5*"]
@@ -49,6 +51,7 @@ Ejemplos OpenAPI: "2"
 |===
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -126,6 +129,7 @@ Status: 200, Returns a JSON array of all matching resources in the collection. I
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -171,6 +175,7 @@ Status: 401, Unauthorized
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -221,6 +226,7 @@ Lista de parámetros de consulta no válidos
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -266,6 +272,7 @@ Status: 403, Forbidden
 ====
 
 
+[[error]]
 == Error
 
 [source]
@@ -311,11 +318,13 @@ Status: 404, Not found
 ====
 
 
+[[definitions]]
 == Definiciones
 
 .Ver definiciones
 [%collapsible]
 ====
+[[type_astra_stateDetail]]
 [role="api-collapsible-fifth-title"]
 type_astra_stateDetail
 
@@ -335,6 +344,7 @@ type_astra_stateDetail
 | detalle | cadena | Verdadero  a| 
 
 |===
+[[type_astra_label]]
 [role="api-collapsible-fifth-title"]
 etiqueta_tipo_astra
 
@@ -350,6 +360,7 @@ etiqueta_tipo_astra
 | valor | cadena | Verdadero  a| 
 
 |===
+[[type_astra_metadata]]
 [role="api-collapsible-fifth-title"]
 tipo_astra_metadatos
 
@@ -382,6 +393,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 | modifiedBy | cadena | Falso  a| 
 
 |===
+[[asup_1_0_get_response_body]]
 [role="api-collapsible-fifth-title"]
 asup_1.0_get_response_body
 
@@ -494,6 +506,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 
 
 |===
+[[type_astra_metadata_list]]
 [role="api-collapsible-fifth-title"]
 type_astra_metadata_list
 
@@ -529,6 +542,7 @@ type_astra_metadata_list
 | modifiedBy | cadena | Falso  a| 
 
 |===
+[[invalidParams]]
 [role="api-collapsible-fifth-title"]
 invalidParams
 

@@ -7,6 +7,7 @@ summary: Crear un nuevo grupo para un usuario
 ---
 = Crear un nuevo grupo para un usuario
 :allow-uri-read: 
+:imagesdir: ../media/
 
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/accounts/{account_id}/core/v1/users/{user_id}/groups`#
@@ -15,6 +16,7 @@ Indica los valores deseados para el recurso API de grupo que se va a crear.
 
 
 
+[[parameters]]
 == Parámetros
 
 [cols="5*"]
@@ -36,6 +38,7 @@ ID del recurso de usuario contenedor
 |===
 
 
+[[request-body]]
 == Cuerpo de la solicitud
 
 Indica los valores deseados para el recurso API de grupo que se va a crear.
@@ -112,6 +115,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -205,6 +209,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -255,6 +260,7 @@ Lista de campos no válidos en el cuerpo de la solicitud
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -300,6 +306,7 @@ Status: 403, Forbidden
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -345,6 +352,7 @@ Status: 406, Not acceptable
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -390,6 +398,7 @@ Status: 500, Internal server error
 ====
 
 
+[[error]]
 == Error
 
 [source]
@@ -440,11 +449,13 @@ Lista de parámetros de consulta no válidos
 ====
 
 
+[[definitions]]
 == Definiciones
 
 .Ver definiciones
 [%collapsible]
 ====
+[[type_astra_label]]
 [role="api-collapsible-fifth-title"]
 etiqueta_tipo_astra
 
@@ -460,6 +471,7 @@ etiqueta_tipo_astra
 | valor | cadena | Verdadero  a| 
 
 |===
+[[type_astra_metadata_update]]
 [role="api-collapsible-fifth-title"]
 type_astra_metadatos_update
 
@@ -492,6 +504,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 | modifiedBy | cadena | Falso  a| 
 
 |===
+[[invalidParams]]
 [role="api-collapsible-fifth-title"]
 invalidParams
 
@@ -509,6 +522,7 @@ Nombre del parámetro de consulta no válido
 Razón por la que el parámetro de consulta no es válido
 
 |===
+[[invalidFields]]
 [role="api-collapsible-fifth-title"]
 invalidFields
 

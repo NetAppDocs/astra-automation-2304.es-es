@@ -7,6 +7,7 @@ summary: Recuperar un recurso AppMirror para una aplicación
 ---
 = Recuperar un recurso AppMirror para una aplicación
 :allow-uri-read: 
+:imagesdir: ../media/
 
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/accounts/{account_id}/k8s/v1/apps/{app_id}/appMirrors/{appMirror_id}`#
@@ -15,6 +16,7 @@ Devuelve el recurso de la API AppMirror almacenado en el cuerpo de respuesta JSO
 
 
 
+[[parameters]]
 == Parámetros
 
 [cols="5*"]
@@ -41,6 +43,7 @@ ID de la colección appMirror que se va a listar
 |===
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -377,6 +380,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -422,6 +426,7 @@ Status: 401, Unauthorized
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -472,6 +477,7 @@ Lista de parámetros de consulta no válidos
 ====
 
 
+[[response]]
 == Respuesta
 
 [source]
@@ -517,6 +523,7 @@ Status: 403, Forbidden
 ====
 
 
+[[error]]
 == Error
 
 [source]
@@ -562,11 +569,13 @@ Status: 404, Not found
 ====
 
 
+[[definitions]]
 == Definiciones
 
 .Ver definiciones
 [%collapsible]
 ====
+[[namespaceMapping]]
 [role="api-collapsible-fifth-title"]
 namespaceMapping
 
@@ -592,6 +601,7 @@ Lista de espacios de nombres a utilizar en el clúster. Correlacionado con la ot
 
 
 |===
+[[storageClasses]]
 [role="api-collapsible-fifth-title"]
 storageClasses
 
@@ -616,6 +626,7 @@ Nombre de la clase de almacenamiento que se utilizará al crear PVC en el clúst
 
 
 |===
+[[type_astra_stateTransition]]
 [role="api-collapsible-fifth-title"]
 type_astra_stateTransition
 
@@ -631,6 +642,7 @@ type_astra_stateTransition
 | a | array[string] | Verdadero  a| 
 
 |===
+[[type_astra_stateDetail]]
 [role="api-collapsible-fifth-title"]
 type_astra_stateDetail
 
@@ -650,6 +662,7 @@ type_astra_stateDetail
 | detalle | cadena | Verdadero  a| 
 
 |===
+[[type_astra_label]]
 [role="api-collapsible-fifth-title"]
 etiqueta_tipo_astra
 
@@ -665,6 +678,7 @@ etiqueta_tipo_astra
 | valor | cadena | Verdadero  a| 
 
 |===
+[[type_astra_metadata_update]]
 [role="api-collapsible-fifth-title"]
 type_astra_metadatos_update
 
@@ -697,6 +711,7 @@ Metadatos especificados por el cliente y el servicio asociados al recurso. Los v
 | modifiedBy | cadena | Falso  a| 
 
 |===
+[[invalidParams]]
 [role="api-collapsible-fifth-title"]
 invalidParams
 
